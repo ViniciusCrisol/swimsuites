@@ -71,7 +71,6 @@ class Shop extends Component {
             </div>
           </CheeseburgerMenu>
         </MenuContainer>
-
         <Wrapper>
           <Container>
             <Header>
