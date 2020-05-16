@@ -23,5 +23,9 @@ button{
   display: none;
   background: none;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 `;

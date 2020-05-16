@@ -3,21 +3,23 @@ import styled from 'styled-components';
 export const Container = styled.div`
   div {
     ul {
-      margin-top: 32px;
+      width: 80%;
+      margin: 32px auto;
 
       h1 {
-        margin-bottom: 32px;
+        margin-bottom: 16;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #3c879c;
 
-        color: #3c879c;
+        color: #ffba53;
         text-transform: uppercase;
         text-align: center;
       }
 
       li {
         width: 90%;
-        height: 64px;
+        height: 48px;
         margin: 0 auto;
-        border-bottom: 1px solid #245e6f;
 
         display: flex;
 

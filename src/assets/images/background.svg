@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1080" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>Path 2</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Cart" transform="translate(0, 0)" fill="white">
-            <polygon id="Path-2" points="1 840 1920 0 1 0"></polygon>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffba53 } 
+	</style>
+	<path id="Forma 1" class="shp0" d="M1921.38 -0.49L2542.26 539.1L1919.88 1080L1299 540.41L1921.38 -0.49Z" />
 </svg>

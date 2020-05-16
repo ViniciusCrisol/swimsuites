@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -9,38 +9,24 @@ export default function BikiniTypes() {
     <Container>
       <h1>New In</h1>
       <h1>Campaingn</h1>
-      <h1>Campaingn</h1>
+      <h1>Collection</h1>
       <NavLink exact to="/shop">
         View all
       </NavLink>
       <br />
-      <NavLink exact to="/">
-        Swimwears
-      </NavLink>
+      <Link to="/">Swimwears</Link>
       <br />
-      <NavLink exact to="/">
-        Hats
-      </NavLink>
+      <Link to="/">Hats</Link>
       <br />
-      <NavLink exact to="/">
-        Shoes
-      </NavLink>
+      <Link to="/">Shoes</Link>
       <br />
-      <NavLink exact to="/">
-        Bags
-      </NavLink>
+      <Link to="/">Bags</Link>
       <br />
-      <NavLink exact to="/">
-        Glasses
-      </NavLink>
+      <Link to="/">Glasses</Link>
       <br />
-      <NavLink exact to="/">
-        Acessories
-      </NavLink>
+      <Link to="/">Acessories</Link>
       <br />
-      <NavLink exact to="/">
-        Special Prices
-      </NavLink>
+      <Link to="/">Special Prices</Link>
     </Container>
   );
 }

@@ -67,7 +67,7 @@ export const ContentArea = styled.div`
   }
 `;
 
-export const Carousel = styled.section`
+export const ImageList = styled.section`
   margin-top: 50px;
   max-width: 858px;
   width: 90%;

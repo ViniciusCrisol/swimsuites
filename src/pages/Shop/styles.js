@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import background from '../../assets/images/background.svg';
 
 export const Wrapper = styled.div`
-  background: #ffba53 url(${background}) no-repeat center top;
+  background: white url(${background}) no-repeat center top;
   min-height: 100vh;
 `;
 
@@ -11,7 +11,7 @@ export const Container = styled.div`
   max-width: 1024px;
   width: 90%;
   margin: 0 auto;
-  padding: 12px;
+  padding: 0 12px;
 `;
 
 export const Header = styled.header`
@@ -56,31 +56,22 @@ export const Header = styled.header`
         display: none;
 
         & + svg {
+          margin-left: 24px;
           display: block;
         }
       }
     }
   }
 
-  @media (max-width: 559px) {
+  @media (max-width: 630px) {
     justify-content: center;
 
-    div {
-      width: 100%;
-    }
-
-    input {
-      margin-bottom: 6px;
-      max-width: none;
-      width: 100%;
-    }
-  }
-  @media (max-width: 460px) {
     input {
       display: none;
     }
 
     div {
+      width: 100%;
       justify-content: space-between;
 
       section {
@@ -101,29 +92,21 @@ export const Header = styled.header`
 `;
 
 export const ContainerItens = styled.div`
-  margin-top: 64px;
+  margin: 64px 0 64px;
 
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
 
-  > section {
-    > img {
-      height: 400px;
-      width: 300px;
-      object-fit: cover;
-      object-position: -80px;
-    }
+  @media (max-width: 630px) {
+    justify-content: center;
+    margin-bottom: 0;
   }
 `;
 
-export const TextImages = styled.div`
-  text-align: center;
-  color: #3c879c;
-
-  P {
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 12px;
-  }
+export const BikiniProductsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 `;

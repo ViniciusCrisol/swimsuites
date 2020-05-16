@@ -22,7 +22,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 872px) {
+  @media (max-width: 630px) {
     display: none;
   }
 

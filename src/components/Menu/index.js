@@ -23,24 +23,31 @@ class Menu extends Component {
     this.setState({ menuOpen: false });
   }
 
+  window() {
+    if (this.window.width >= 630) {
+      this.closeMenu();
+    }
+  }
+
   render() {
     const { menuOpen } = this.state;
 
     return (
       <>
-        <button type="button" onClick={() => this.openMenu()}>
-          <AiOutlineMenu color="#245e6f" size={50} />
-        </button>
-
         <Container>
+          <button type="button" onClick={() => this.openMenu()}>
+            <AiOutlineMenu color="#245e6f" size={38} />
+          </button>
+
+          {this.window()}
           <CheeseburgerMenu
-            width="600"
+            transitionTime={0.5}
             isOpen={menuOpen}
             closeCallback={() => this.closeMenu()}
           >
             <div>
               <ul>
-                <h1>Swimsuites</h1>
+                <h1>swimwears</h1>
                 <li>
                   <Link to="/" onClick={() => this.closeMenu()}>
                     View all
