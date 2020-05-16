@@ -23,10 +23,6 @@ export const Container = styled.div`
         margin-top: 8px;
         font-weight: 500;
 
-        padding-bottom: 4px;
-
-        border-bottom: 1px solid;
-
         & + span {
           margin-left: 30px;
         }
@@ -36,12 +32,12 @@ export const Container = styled.div`
         margin-left: 30px;
       }
 
-      @media (max-width: 872px) and (min-width: 460px) {
+      @media (max-width: 885px) and (min-width: 460px) {
         display: none;
       }
     }
 
-    @media (max-width: 872px) and (min-width: 460px) {
+    @media (max-width: 885px) and (min-width: 460px) {
       button {
         display: block;
       }

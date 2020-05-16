@@ -23,7 +23,7 @@ export const Header = styled.header`
 
   input {
     height: 60px;
-    max-width: 260px;
+    width: 300px;
     background-color: #ffdcab;
     border: 0;
     padding: 4px 12px;
@@ -36,7 +36,8 @@ export const Header = styled.header`
       color: #245e6f;
     }
   }
-  div {
+
+  > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,10 +47,6 @@ export const Header = styled.header`
       color: #3c879c;
       font-size: 18px;
       margin-right: 16px;
-    }
-
-    button {
-      display: none;
     }
 
     section {
@@ -86,11 +83,13 @@ export const Header = styled.header`
     div {
       justify-content: space-between;
 
-      button {
-        display: block;
+      section {
+        svg {
+          display: block;
+        }
       }
 
-      svg {
+      button {
         display: block;
       }
 
@@ -120,8 +119,8 @@ export const ContainerItens = styled.div`
 
 export const TextImages = styled.div`
   text-align: center;
-
   color: #3c879c;
+
   P {
     font-weight: 500;
     font-size: 20px;

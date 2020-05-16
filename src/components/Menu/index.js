@@ -1,39 +1,93 @@
-import styled from 'styled-components';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import CheeseburgerMenu from 'cheeseburger-menu';
 
-export const MenuContainer = styled.div`
-  div {
-    ul {
-      margin-top: 32px;
+import { AiOutlineMenu } from 'react-icons/ai';
 
-      h1 {
-        margin-bottom: 32px;
+import { Container } from './styles';
 
-        color: #3c879c;
-        text-transform: uppercase;
-        text-align: center;
-      }
+class Menu extends Component {
+  constructor(props) {
+    super(props);
 
-      li {
-        width: 90%;
-        height: 64px;
-        margin: 0 auto;
-        border-bottom: 1px solid #245e6f;
-
-        display: flex;
-
-        a {
-          height: 100%;
-          width: 100%;
-
-          display: flex;
-          align-items: center;
-
-          text-decoration: none;
-          font-weight: 500;
-          font-size: 16px;
-          color: #245e6f;
-        }
-      }
-    }
+    this.state = {
+      menuOpen: false,
+    };
   }
-`;
+
+  openMenu() {
+    this.setState({ menuOpen: true });
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false });
+  }
+
+  render() {
+    const { menuOpen } = this.state;
+
+    return (
+      <>
+        <button type="button" onClick={() => this.openMenu()}>
+          <AiOutlineMenu color="#245e6f" size={50} />
+        </button>
+
+        <Container>
+          <CheeseburgerMenu
+            width="600"
+            isOpen={menuOpen}
+            closeCallback={() => this.closeMenu()}
+          >
+            <div>
+              <ul>
+                <h1>Swimsuites</h1>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    View all
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Swimwears
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Hats
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Shoes
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Bags
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Glasses
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Acessories
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Special Prices
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </CheeseburgerMenu>
+        </Container>
+      </>
+    );
+  }
+}
+
+export default Menu;

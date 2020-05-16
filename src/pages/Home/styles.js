@@ -98,7 +98,7 @@ export const Carousel = styled.section`
     }
   }
 
-  @media (max-width: 872px) {
+  @media (max-width: 885px) {
     display: none;
   }
 `;

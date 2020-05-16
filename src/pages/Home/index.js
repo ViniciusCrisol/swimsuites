@@ -17,17 +17,17 @@ function Home() {
       <Header />
       <ContentArea>
         <div>
-          <h1>Choise your</h1>
+          <h1>Choise&nbsp;your</h1>
           <section>
-            <h1>best &nbsp;</h1>
+            <h1>best&nbsp;</h1>
             <h1>swimsuite!</h1>
           </section>
-          <Link to="/shop">Go shopping</Link>
+          <Link to="/shop">Go&nbsp;shopping</Link>
         </div>
         <Carousel>
-          <MainPhotos Image={Img1} Title="Mary Me" Price="500$" />
+          <MainPhotos Image={Img1} Title="Mary&nbsp;Me" Price="500$" />
           <MainPhotos Image={Img2} Title="Pinacolada" Price="500$" />
-          <MainPhotos Image={Img3} Title="Dots Baby" Price="500$" />
+          <MainPhotos Image={Img3} Title="Dots&nbsp;Baby" Price="500$" />
         </Carousel>
       </ContentArea>
     </Container>

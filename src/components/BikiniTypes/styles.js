@@ -15,6 +15,11 @@ export const Container = styled.div`
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+    transition: 200ms;
+
+    &:hover {
+      color: #1cbad8;
+    }
   }
 
   @media (max-width: 872px) {
