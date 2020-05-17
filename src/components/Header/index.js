@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -7,7 +8,7 @@ function Header() {
     <Container>
       <div>
         <section>
-          <span>Catalog</span>
+          <Link to="/shop">Catalog</Link>
           <span>Shipping and payment</span>
         </section>
         <section>

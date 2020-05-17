@@ -47,7 +47,7 @@ class Menu extends Component {
           >
             <div>
               <ul>
-                <h1>swimwears</h1>
+                <h1>swimsuites</h1>
                 <li>
                   <Link to="/" onClick={() => this.closeMenu()}>
                     View all

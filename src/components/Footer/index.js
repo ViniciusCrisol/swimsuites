@@ -14,7 +14,7 @@ function Footer() {
         <h1>Detalhes</h1>
         <p>
           Aplicação feita com base no design do projeto
-          <a rel="noreferrer" target="_blank" href={linkProject}>
+          <a rel="noopener noreferrer" target="_blank" href={linkProject}>
             &nbsp;swimsuits&nbsp;
           </a>
           desenvolvido por
@@ -29,7 +29,7 @@ function Footer() {
             <p>vinicius.crisol@etec.sp.gov.br</p>
           </li>
           <li>
-            <a rel="noreferrer" target="_blank" href={linkPortfolio}>
+            <a rel="noopener noreferrer" target="_blank" href={linkPortfolio}>
               Portfólio
             </a>
           </li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { AiOutlineSearch, AiOutlineShopping } from 'react-icons/ai';
 
@@ -50,12 +51,11 @@ function Shop() {
           <Header>
             <input type="text" placeholder="Search" />
             <div>
-              <p>Sign&nbsp;in</p>
+              <Link to="/sing-in">Sign&nbsp;in</Link>
               <MenuContainer />
-              <section>
-                <AiOutlineSearch size={38} color="#3c879c" />
+              <Link to="/cart">
                 <AiOutlineShopping size={38} color="#3c879c" />
-              </section>
+              </Link>
             </div>
           </Header>
           <ContainerItens>

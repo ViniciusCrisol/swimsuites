@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   h1 {
     color: #245e6f;
+    text-transform: uppercase;
 
     margin: 12px 0 12px;
-
-    text-transform: uppercase;
   }
 
   a {
@@ -15,6 +14,7 @@ export const Container = styled.div`
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+
     transition: 200ms;
 
     &:hover {

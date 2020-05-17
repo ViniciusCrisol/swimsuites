@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   padding: 12px 0 8px;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -17,11 +18,14 @@ export const Container = styled.div`
     flex-wrap: wrap;
 
     section {
-      span {
+      span,
+      a {
+        text-decoration: none;
         color: white;
         font-size: 18px;
-        margin-top: 8px;
         font-weight: 500;
+
+        margin-top: 8px;
 
         & + span {
           margin-left: 30px;

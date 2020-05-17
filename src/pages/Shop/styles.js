@@ -4,7 +4,6 @@ import background from '../../assets/images/background.svg';
 
 export const Wrapper = styled.div`
   background: white url(${background}) no-repeat center top;
-  min-height: 100vh;
 `;
 
 export const Container = styled.div`
@@ -42,24 +41,12 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    p {
+    a {
+      text-decoration: none;
       font-weight: 500;
       color: #3c879c;
       font-size: 18px;
       margin-right: 16px;
-    }
-
-    section {
-      display: flex;
-
-      svg {
-        display: none;
-
-        & + svg {
-          margin-left: 24px;
-          display: block;
-        }
-      }
     }
   }
 
@@ -74,17 +61,11 @@ export const Header = styled.header`
       width: 100%;
       justify-content: space-between;
 
-      section {
-        svg {
-          display: block;
-        }
-      }
-
       button {
         display: block;
       }
 
-      p {
+      a:first-child {
         display: none;
       }
     }
